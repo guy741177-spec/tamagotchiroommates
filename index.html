@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roommate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="ageGate">
+  <div class="gateBox">
+    <h2>Content Notice</h2>
+    <p>
+      This game includes characters who may appear nude in a
+      <strong>non-sexual, body-neutral context</strong>.
+    </p>
+
+    <label>
+      <input type="checkbox" id="confirmAge">
+      I am 18 years of age or older
+    </label>
+
+    <button id="enterBtn" disabled>Enter</button>
+  </div>
+</div>
+
+<div id="app">
+
+  <div id="room">
+    <img id="sprite" src="assets/sprites/placeholder.jpeg" alt="Roommate">
+  </div>
+
+  <div id="status">
+    <div class="bar">
+      <label>Hunger</label>
+      <div class="meter"><div id="hunger"></div></div>
+    </div>
+
+    <div class="bar">
+      <label>Energy</label>
+      <div class="meter"><div id="energy"></div></div>
+    </div>
+
+    <div class="bar">
+      <label>Mood</label>
+      <div class="meter"><div id="mood"></div></div>
+    </div>
+  </div>
+
+  <div id="dialogue">
+    <p id="text">Your roommate looks at you expectantly.</p>
+  </div>
+
+  <div id="actions">
+    <button onclick="doAction('feed')">Feed</button>
+    <button onclick="doAction('clean')">Clean</button>
+    <button onclick="doAction('chat')">Chat</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
